@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="gomoku.js"></script>
+        <link rel="stylesheet" type="text/css" href="gomoku.css">
+    </head>
+    <body>
+            <header><ul>
+                    <li><a href="gomoku.html">Play the Game</a></li>
+                    <li><a href="rule.html">Learn the Rules</a></li></ul>
+            </header>
+        <h1>The Game of Gomoku</h1>
+        <form>
+            <input type="radio" value="15" name="size" id="15" checked>15x15<br>
+            <input type="radio" value="19" name="size" id="19">19x19<br>
+            Choose board color: <input type="color" id="boardcolor" value="#ffffff"> 
+            Player 1 color: <input type="color" id="player1" value="#ffffff">
+            Player 2 color: <input type="color" id="player2" value="#000000"><br>
+            <input type="button" onclick="startGame()" value="Start game!">
+        </form>
+        <div id="timer"></div>
+        <div id="plays"></div>
+        <div id="board"></div>
+        <footer>Coded by Steven Duran</footer>
+    </body>
+</html>
